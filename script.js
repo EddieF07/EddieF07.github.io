@@ -19,7 +19,7 @@ var points = []
 // mouse stroke is complete these points will be moved to points array.
 var temp_points = []
 
-// current easing state
+// current erasing state
 var erasing = false;
 // current dragging state, 
 // dragging is true when mouse is clicked and moved together
@@ -75,7 +75,7 @@ function draw() {
 function mouseDragged() {
     // set dragging to true
     dragging = true;
-    // add current poiunt to temp_points array.
+    // add current point to temp_points array.
     temp_points.push([mouseX, mouseY]);
 }
 
