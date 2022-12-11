@@ -117,7 +117,7 @@ var demo_users = [
     },
 ]
 
-var uIndex = prompt('Select user: 0, 1, 2, 3', 0);
+var uIndex = prompt('Select user: 0, 1, 2, 3, 5', 0);
 var selected_user = demo_users[uIndex];
 
 //Initialize mesibo
