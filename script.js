@@ -97,24 +97,34 @@ function mouseReleased() {
 //Create mesibo users and obtain credentials at mesibo.com/console
 var demo_users = [
     {
-        'token': '1b7373df53723e4a79f6f3664acc3d4119e5fcafb52891e11455f10gad259fe5da6'
-        , 'uid': 5297214
+        'token': 'd14642f3b140e98d975988a06b7187549a79887f5912bebb45b1b6ga026f83aa65'
+        , 'uid': 5376428
     },
 
     {
-        'token': '5d95ac2648e7ce0ca0ed8adaa54467f45a391134c641e0f9e22455f12ma3bebe0c687'
-        , 'uid': 5297215
+        'token': 'c5da9863ceb83051bc7235113bd1fbaf464c9e02a65b223c8e8845b1b8jaf3160cbdfd'
+        , 'uid': 5376429
+    },
+    
+    {
+        'token': 'e4e880d19bdfd64ef01996bb05c1b3d356f9aa9996f655c4fffbe7745b1b9ua8544abd8d7'
+        , 'uid': 5376430
+    },
+    
+    {
+        'token': '4af6af43aa4af53cab3cec188ffbc7cb065e09955b43c752eceee45b1bbxa6006d58cf0'
+        , 'uid': 5376431
     },
 ]
 
-var uIndex = prompt('Select user: 0, 1', 0);
+var uIndex = prompt('Select user: 0, 1, 2, 3', 0);
 var selected_user = demo_users[uIndex];
 
 //Initialize mesibo
 const MESIBO_APP_ID = 'drawing_app_01.in.webidevi';
 const MESIBO_ACCESS_TOKEN = selected_user.token;
 const MESIBO_USER_UID = selected_user.uid;
-const MESIBO_GROUP_ID = 2610654; //Create a group and add members(demo_users)
+const MESIBO_GROUP_ID = 2627251; //Create a group and add members(demo_users)
 const TYPE_CANVAS_MESSAGE = 7;
 
 function MesiboListener() {
